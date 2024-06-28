@@ -1,0 +1,126 @@
+# getChercheurs
+GET {{baseUrl}}/recherche/chercheurs
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+# getProjets
+GET {{baseUrl}}/recherche/projets
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+# getPublications
+GET {{baseUrl}}/recherche/publications
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+# getPublications
+GET {{baseUrl}}/recherche/api-token-auth
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+
+# DELETE deleteChercheurs
+DELETE {{baseUrl}}/recherche/chercheurs/1
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+
+# DELETE deleteProjets
+DELETE {{baseUrl}}/recherche/projets/1
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+
+# DELETE deletePublications
+DELETE {{baseUrl}}/recherche/publications/1
+Content-Type: application/json
+Authorization: Token {{token}}
+
+###
+
+# POST create chercheurs
+POST {{baseUrl}}/recherche/chercheurs
+Content-Type: application/json
+Authorization: Token {{token}}
+
+{
+    "nom": "Nom du chercheur",
+    "specialite": "Spécialité du chercheur",
+    "projets": []
+}
+
+# POST create projets
+POST {{baseUrl}}/recherche/projets
+Content-Type: application/json
+Authorization: Token {{token}}
+{
+  	"chef_projet": 1,
+  	"date_debut": "2334-4-21",
+	"date_fin_prevue": "1907-2-5",
+	"description": "fsdfdsfsfsdf",
+  	"titre":"rrsdfszf"
+}
+
+# POST create publication
+POST {{baseUrl}}/recherche/publications
+Content-Type: application/json
+Authorization: Token {{token}}
+{
+  "titre": "titre de la publication",
+  "resume": "résumé de la publication",
+  "projet_associe": 1,
+  "date_publication": "2024-06-26"
+}
+
+
+
+# PUT
+PUT {{baseUrl}}/recherche/chercheurs
+Content-Type: application/json
+Authorization: Token {{token}}
+
+{
+    "nom": "Nom du chercheur1",
+    "specialite": "Spécialité du chercheur1",
+    "projets": []
+}
+
+
+# PUT
+PUT {{baseUrl}}/recherche/projets
+Content-Type: application/json
+Authorization: Token {{token}}
+
+{
+    "chef_projet": 1,
+  	"date_debut": "2334-4-23",
+	"date_fin_prevue": "1908-2-5",
+	"description": "fsdfdsfsfsdf",
+  	"titre":"rrsdfszf"
+}
+
+# PUT
+PUT {{baseUrl}}/recherche/publications
+Content-Type: application/json
+Authorization: Token {{token}}
+
+{
+    "titre": "titre de la publicationnnn",
+    "resume": "résumé de la publicationnnnn",
+    "projet_associe": 1,
+    "date_publication": "2024-06-30"
+}
+
+
